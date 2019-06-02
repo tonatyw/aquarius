@@ -54,4 +54,7 @@ public class HashBalanceDemoTwo {
 # 后续
 1. 完善对象支持类型
 2. 实现负载加权随机算法、加权轮询算法、最小连接数法
-3. 考虑结合spring做文件配置（由于考虑轻量化，这里不是移植，最多在保证原功能情况下，支持在spring里做文件配置）
+3. 考虑结合spring做文件配置（由于考虑轻量化，这里不是移植，最多在保证原功能情况下，支持在spring里做文件配置）<br>
+
+
+项目详细介绍可以访问[tonatyw的博客地址](https://blog.csdn.net/forintiii/article/details/90737188)
