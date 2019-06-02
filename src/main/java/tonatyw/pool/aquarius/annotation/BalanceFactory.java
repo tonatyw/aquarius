@@ -21,7 +21,7 @@ public class BalanceFactory {
 	/** 注解包路径 暂不考虑文件配置 暂不考虑集成springboot */
 	private static String base = "tonatyw.pool.aquarius.annotation.";
 	/** 负载实现路径 */
-	private static String handleBast = "tonatyw.pool.aquarius.annotation.handle.";
+	private static String handleBase = "tonatyw.pool.aquarius.annotation.handle.";
 	/**
 	 * 
 	 * @Title: getInstance
@@ -87,7 +87,7 @@ public class BalanceFactory {
 			Class aimClass = Class.forName(classPath);
 			// 获取名称
 			String className = StringUtils.substringAfterLast(balanceName, ".");
-			Class typeClass = Class.forName(handleBast.concat(className));
+			Class typeClass = Class.forName(handleBase.concat(className));
 			Balance b = (Balance) typeClass.newInstance();
 			
 			b.init(aimClass, params, paramType);
