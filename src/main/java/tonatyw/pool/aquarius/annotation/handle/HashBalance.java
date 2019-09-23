@@ -20,7 +20,7 @@ public class HashBalance<T> implements Balance<T>{
 		// hash散列算法
 		BigDecimal longBd = new BigDecimal(System.currentTimeMillis());
 		BigDecimal longSize = new BigDecimal(list.size());
-		return (T) list.get(longBd.divideAndRemainder(longSize)[1].intValue());
+		return list.get(longBd.divideAndRemainder(longSize)[1].intValue());
 	}
 	public void init(Class<T> clas, Object[][] objs, Class[] paramsType) {
 		try {
